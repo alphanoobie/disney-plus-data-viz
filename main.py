@@ -1,7 +1,6 @@
 #Import dependencies
 import streamlit as st
 import pandas as pd
-import seaborn
 import plotly.express as px
 
 #Project Title
@@ -24,3 +23,9 @@ values = df['type'].value_counts()
 keys = df['type'].unique()
 fig = px.pie(df, values=values, names=keys,color=keys, color_discrete_map={'Movie':'cyan','TV Show':'royal blue'})
 st.plotly_chart(fig)
+
+#Movies and tv show rating
+st.subheader('Ratings of the Movies and TV Shows')
+fig = px.histogram(data_frame=df, x = ['rating'], color = 'type')
+st.plotly_chart(fig)
+
