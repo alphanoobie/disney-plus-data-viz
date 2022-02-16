@@ -29,3 +29,4 @@ st.subheader('Ratings of the Movies and TV Shows')
 fig = px.histogram(data_frame=df, x = ['rating'], color = 'type')
 st.plotly_chart(fig)
 
+df
