@@ -50,7 +50,7 @@ if nav == "Project Info":
     st.title('PBL Project')
     st.markdown('This Data Visualization Project is made by the following students of **TE(A)** of Zeal College Of Engineering And Research under the guidance of **_Ms Zarinabegam Mundargi_** ')
     student_data = {
-        'Name':['Sarthak Ekhande', 'Husain Gadiwala', 'Srujan Garde','Srushti Garde', 'Sakshi Gawali'],
+        'Name':['Sarthak Ekhande', 'Husain Gadiwala', 'Srujan Garde','Srushti Gavale', 'Sakshi Gawali'],
         'Roll Number':['T211031','T211032','T211033','T211034','T211035']
     }
     student_data_df = pd.DataFrame(data=student_data)
